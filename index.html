@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>A3 final website</title>
+</head>
+
+<body>
+  
+    <!--NAVIGATION-->
+  <nav>
+    <!--&#9776; for generic burger lines-->
+    <label class="menu"  for="burger"> &#9776;</label>
+    <input id="burger" type="checkbox">
+ 
+    <img src="images/logo.png" alt="logo">
+    
+    <sl-button size="large" variant="primary">Subscribe</sl-button>
+    <div>
+      <audio id="audio" src="images/audio.mp3"></audio>
+      <label for="audioSwitch"></label>
+      <sl-switch id="audioSwitch" size="large"></sl-switch>
+    </div>
+
+  </nav>
+
+   <!--underwater Animation-->
+      <div class= "video1">
+        <video autoplay loop>
+          <source src="video/water1.mp4" type="video/mp4">
+          your browser does not support the video tag
+        </video>
+      </div>
+      <div class="intro">
+        <h2> Let's dive </h2>
+        <p>Let's dive into the mysteries of the deep sea and discover its hidden wonders.</p>
+      </div>
+
+    <!--overview section-->
+    <div class="video2">
+      <video autoplay loop>
+        <source src="video/effect-2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="overview">
+        <h2>Discover the Ocean's Wonders</h2>
+        <p>Do you know that the Ocean is constituted of 5 main zones? Let's dive!</p>
+
+          <!--Scroll trigger gsap-->
+        <div class="feature-section">
+
+          <div class="feature-wrap">
+              <div class="feature">
+              <img src="images/sunlit-zone.png" alt="sunlit-zone">
+              </div>
+
+              <div class="feature">
+                <img src="images/twilight-zone.png" alt="twilight-zone">
+              </div>
+
+              <div class="feature">
+                <img src="images/Midnight-zone.png" alt="midlight-zone">
+              </div>
+
+              <div class="feature">
+                <img src="images/Abyssal-zone.png" alt="abyssal-zone">
+              </div>
+
+              <div class="feature">
+                <img src="images/hadal-zone.png" alt="hadal-zone">
+              </div>
+            </div>
+        </div> 
+      </div>
+    </div>
+
+
+    <!--SUNLIT ZONE-->
+    <section class="hidden">
+      <div class="info1">
+        <div class="degree">
+          <h1>30-2°C</h1>
+          <img src = "images/thermometer-svgrepo-com(1).svg " alt="thermometer">
+        </div>
+
+        <h1>Sunlit Zone</h1>
+        <hr>
+        <p>200 meters deep</p>
+        <div class="details">
+          <p>The sunlit, known as the Euphotic Zone, is the thinnest ocean zone that measures 
+            about 200 meters(656 feet)  deep. There, light penetrates the water, which allows
+            photosynthesis to occur. The surface waters are warmerthan deep waters and reach a
+            temperature of 30 Degrees Celcius.</p>
+           
+            <h3>Importance of the zone:</h3>
+            <p>The zone allows picoplankton to live, which serves as food for
+            animals like zooplankton and other fish, contributing to sustaining 
+            the food chain cycle. The sunlit zone is where more aquatic ecosystems 
+            live. Below are examples of fishes and marine ecosystems that live in that zone.
+            </p>
+         </div>
+              <!--splide-carousel-->
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="images/marlin.png" alt="marlin"></li>
+                <li class="splide__slide"><img src="images/shark.png" alt="shark"></li>
+                <li class="splide__slide"><img src="images/nemo.png" alt="clownfish"></li>
+                <li class="splide__slide"><img src="images/bluefish.png" alt="seahorse"></li>
+                <li class="splide__slide"><img src="images/turtle.png" alt="turtle"></li>
+                <li class="splide__slide"><img src="images/squid.png" alt="marlin"></li>
+              </ul>
+            </div>
+          </div>
+       </div>
+    </section>
+  
+    <div class="zone1">
+      <div class="zone1-image">
+        <img src="images/zone1-v1.jpg" alt="zone1">
+      </div>
+    </div>
+  
+    
+
+    <!--TWILIGHT ZONE-->
+
+      <section class="hidden">
+        <div class="info2">
+          <div class="degree">
+            <h1>4-5°C</h1>
+            <img src = "images/thermometer-svgrepo-com(1).svg" alt="thermometer">
+          </div>
+          <h1>Twilight Zone</h1>
+          <hr>
+        
+            <p>200-1000 meters deep</p>
+          <div class="details">
+            <p>The twilight zone, also known as the Mesopelagic Zone, measures 
+              about 200-1000 meters deep. At this ocean level, creatures are bioluminescent
+               or have huge mouths. As we dive deeper, less sunlight penetrates the waters.
+                The water is cooler than the surface waters and reaches a temperature of 4-5 
+                Degrees Celcius.
+            </p>
+
+              <h3>Importance of protecting that zone:</h3>
+              <p>This zone helps in regulating the amount of 
+                carbon dioxide in the atmosphere. The ocean is good 
+                at absorbing carbon dioxide in the atmosphere, which 
+                creates balance on the planet. Secondly, marine snow is
+                 produced from the absorption of carbon dioxide by Phytoplankton, 
+                 which is crucial in the ocean food chain. Many marine animals feed 
+                 on them, ensuring the survival of many marine species and the stability of
+                  our planet.
+              </p>
+          </div>
+            
+            <!--splide-carousel-->
+            <div class="splide" >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img src="images/anglerfish.png" alt="anglerfish"></li>
+                  <li class="splide__slide"><img src="images/zooplankton.png" alt="zooplankton"></li>
+                  <li class="splide__slide"><img src="images/fish3.png" alt="fish3"></li>
+                  <li class="splide__slide"><img src="images/calamar-twilight.png" alt="calamar twilight"></li>
+                  <li class="splide__slide"><img src="images/anglerfish2.png" alt="anglerfish2"></li>
+
+                </ul>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <div class="zone2">
+        <div class="zone2-image">
+          <img src="images/zone2-v1.jpg" alt="zone2">
+        </div>
+      </div>
+
+    <!--Midlight ZONE-->
+      <section class="hidden">
+        <div class="info3">
+          <div class="degree">
+            <h1> 4° C</h1>
+            <img src = "images/thermometer-svgrepo-com(1).svg" alt="thermometer">
+          </div>
+          <h1>Midlight Zone</h1>
+          <hr>
+        
+            <p>1000- 4000 meters deep</p>
+          <div class="details">
+            <p>The midnight zone, also known as the Bathypelagic Zone, is the deepest 
+              ocean zone, about 1000-4000 meters deep. This zone is full of mysteries 
+              as no light penetrates the water there. The ocean at this level is in complete 
+              darkness, allowing more strange and bioluminescent aquatic animals to live. The 
+              temperature there is so cold, reaching 4 Degrees Celcius.
+            </p>
+
+              <h3>Importance of the zone:</h3>
+              <p>
+                The midnight zone is home to many larvae that develop in other regions. This zone helps sustain life in the marine
+                 ecosystem as zooplankton move down from the twilight zone to protect themselves from predators.The midnight zone is 70% 
+                 of our waters, allowing carbon dioxide to be absorbed and consumed by the marine ecosystem.
+              </p>
+          </div>
+            
+            <!--splide-carousel-->
+            <div class="splide">
+        
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img src="images/fish2.png" alt="fish2"></li>
+                  <li class="splide__slide"><img src="images/fish1.png" alt= "fish1"></li>
+                  <li class="splide__slide"><img src="images/anglerfish2.png" alt="anglerfish"></li>
+                  <li class="splide__slide"><img src="images/vampire-squid.png" alt="vampire-squid"></li>
+                  <li class="splide__slide"><img src="images/yellow-squid.png" alt="yellow-squid"></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </section>
+
+    <div class="zone3">
+      <div class="zone3-image">
+        <img src="images/zone3-v1.jpg" alt="zone3">
+      </div>
+    </div>
+
+    <!--Abyssal ZONE-->
+      <section class="hidden">
+        <div class="info4">
+          <div class="degree">
+            <h1>2-3°C</h1>
+            <img src = "images/thermometer-svgrepo-com(1).svg" alt="thermometer">
+          </div>
+          <h1>Abyssal Zone</h1>
+          <hr>
+        
+            <p>4000-6500 meters deep</p>
+          <div class="details">
+            <p>The abyssal zone, also known as the abyssopelagic zone, 
+              is the coldest ocean zone, hitting a temperature of 2 to 3 degrees 
+              Celsius. It is about 4000-6500 meters deep and is an area of complete 
+              darkness where light is nonexistent. It is an unexplored area, but scientists 
+              say animals communicate using bioluminescence. 
+            </p>
+
+              <h3>Importance of the zone:</h3>
+              <p>
+                This area is important as it is filled with minerals that 
+                are often used in manufacturing. Minerals like cobalt, 
+                aluminium, and nickel are often extracted from this zone and 
+                used in manufacturing car parts and other products. This area also 
+                accounts for one-third of the planet's sea floor and has an atmospheric 
+                pressure of 600, which makes it difficult to dive into these depths.
+          </div>
+            
+            <!--splide-carousel-->
+            <div class="splide">
+        
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img src="images/barreleye.png" alt="barreleye"></li>
+                  <li class="splide__slide"><img src="images/pinksquid.png" alt="pink-squid"></li>
+                  <li class="splide__slide"><img src="images/sea-angel.png" alt="sea angel"></li>
+                  <li class="splide__slide"><img src="images/transparentsquid.png" alt="transparentsquid"></li>
+                  <li class="splide__slide"><img src="images/fish5.png" alt="fish5"></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </section>
+
+    <div class="zone4">
+      <div class="zone4-image">
+        <img src="images/zone4-v1.jpg" alt="zone4">
+      </div>
+    </div>
+
+    <!--Hadal ZONE-->
+      <section class="hidden">
+        <div class="info5">
+          <div class="degree">
+            <h1>1° C</h1>
+            <img src = "images/thermometer-svgrepo-com(1).svg" alt="thermometer">
+          </div>
+          <h1>Hadal Zone</h1>
+          <hr>
+        
+          <p>6500 - 11000 meters deep </p>
+          <div class="details">
+            <p>The Hadal Zone, also known as the Hadopelagic Zone, measures 
+              about 6500-11,000 meters deep and is one of the coldest places in the ocean, 
+              hitting temperatures of 1 degree Celsius and less. The Hadal Zone is often present 
+              in areas where there are trenches. Trenches are often caused by tectonic plate motion.
+            </p>
+      
+              <h3>Importance of the zone:</h3>
+              <p>The hadal zone is formed when two tectonic plates are subducted one 
+                over the other, which creates trenches. Marine life grows in these trenches, creating 
+                habitats for bioluminescent organisms. This zone is very important as it helps regulate climates and 
+                absorb carbon dioxide. There is more to discover, and scientists are working hard to understand this zone's 
+                benefits and mysteries, which are yet to be discovered.
+              </p>
+          </div>
+            
+            <!--splide-carousel-->
+            <div class="splide">
+        
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img src="images/squidhadal.png" alt="squidhadal"></li>
+                  <li class="splide__slide"><img src="images/fish4.png " alt="fish4 "></li>
+                  <li class="splide__slide"><img src="images/hadal-snailfish.png " alt=" hadal-snailfish"></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </section>
+
+    <div class="zone5">
+      <div class="zone5-image">
+        <img src="images/zone5-v1.jpg" alt="zone5">
+      </div>
+    </div>
+
+        <!--last-section-->
+      <div class="last-section">
+         
+          
+          <div class="last-input">
+            <h2>Take action</h2>
+            <p>Its beautiful right? Let's take action together to protect our marine 
+              ecosystem and ensure balance in our planet for our future generation.
+            <p>
+
+            <form action="action_page.php">
+
+              <label for="name">Fill in the form below and contribute into saving our oceans.</label>
+              <input type="text" id="name" name="name" placeholder="Name">
+              <input type="text" id="email" name="email" placeholder="Email">
+              <input type="submit" value="Donate">
+
+            </form>
+
+
+            <div class="carousel">
+              <sl-carousel class="scroll-hint" pagination style="--scroll-hint: 10%;">
+                <sl-carousel-item>
+                  <img src="images/sunlit-zone.png" alt="ocean1">
+                    
+                    
+                </sl-carousel-item>
+                <sl-carousel-item>
+                  <img src="images/Abyssal-zone.png" alt="Ocean2">
+                             
+                </sl-carousel-item>
+                <sl-carousel-item>
+                  <img src="images/twilight-zone.png" alt="ocean3">
+                    
+                </sl-carousel-item>
+                <sl-carousel-item>
+                  <img src="images/hadal-zone.png" alt="ocean4">
+                    
+                </sl-carousel-item>
+                <sl-carousel-item>
+                  <img  src="images/Midnight-zone.png" alt="ocean5">
+                    
+                </sl-carousel-item>
+              </sl-carousel>
+            </div>
+          </div>
+          <div class="last-image">
+            <img src="images/footer.jpg" alt="footer" class="background">
+          </div>
+      </div>
+      <!--footer-->
+      <div id="footer-end">
+
+        <!--SOCIAL MEDIA ?-->
+            <p>123 456 7896 | oceana@gmail.com</p>
+            <p>@2024 oceana</p>
+
+            <div class="social-media">
+                <img width="50" src="images/facebook.png" alt="facebook">
+                <img width="50" src="images/Insta.png" alt="instagram">
+                <img width="50" src="images/twitter.png" alt="twitter">
+            </div>
+       </div>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace-autoloader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    new Splide('.splide').mount();
+  </script>
+  <script src= "main.js"></script>
+</body>
+</html>
